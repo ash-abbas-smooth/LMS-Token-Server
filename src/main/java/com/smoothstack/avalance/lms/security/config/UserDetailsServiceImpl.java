@@ -25,12 +25,12 @@ public class UserDetailsServiceImpl implements UserDetailsService  {
 		//TODO: USE DATABASE
 		// hard coding the users. All passwords must be encoded.
 		final List<AppUser> users = Arrays.asList(
-			new AppUser(1, "borrower", encoder.encode("borrower"), "BORROWER"),
-			new AppUser(2, "admin", encoder.encode("admin"), "ADMIN"),
-			new AppUser(3, "librarian", encoder.encode("librarian"), "LIBRARIAN")
+			new AppUser(1, "vskitteral0@shinystat.com", encoder.encode("jtRQ3nKc84f"), "COUNTER"),
+			new AppUser(9, "shewins8@linkedin.com", encoder.encode("mI9Pw8mHTIH9"), "TRAVELER"),
+			new AppUser(8, "vstowell7@google.co.jp", encoder.encode("QlrEaZ"), "TRAVEL_AGENT")
 		);
 		
-
+		
 		//Gather all users 
 		for(AppUser appUser: users) {
 			if(appUser.getUsername().equals(username)) {
